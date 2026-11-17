@@ -1,7 +1,6 @@
 class Solution {
-public:
-    int fib(int n) {
-        if (n == 0) return 0;
+ public int fib(int n) {
+ if (n == 0) return 0;
  if (n == 1) return 1;
  int previous = 0;
  int current = 1;
@@ -11,5 +10,5 @@ public:
  current = next;
  }
  return current;
-    }
-};
+ }
+}
