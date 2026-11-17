@@ -1,19 +1,12 @@
 class Solution {
-public:
-    string reverseWords(string s) {
-        stringstream ss(s);
-        string word;
-        string answer = "";
-
-        while (ss >> word) {
-            if (answer.empty()) {
-                answer = word;
-            } 
-            else {
-                answer = word + " " + answer;
-            }
-        }
-
-        return answer;
-    }
-};
+ public String reverseWords(String s) {
+ String[] words = s.trim().split("\\s+");
+ StringBuilder answer = new StringBuilder();
+ for (int i = words.length - 1; i >= 0; i--) {
+ answer.append(words[i]);
+ if (i > 0) {
+ answer.append(" ");
+ }
+ }
+ return answer.toString();
+ }
