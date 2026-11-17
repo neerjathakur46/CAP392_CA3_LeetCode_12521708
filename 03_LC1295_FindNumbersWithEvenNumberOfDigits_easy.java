@@ -1,7 +1,6 @@
 class Solution {
-public:
-    int findNumbers(vector<int>& nums) {
-       int answer = 0;
+public int findNumbers(int[] nums) {
+ int answer = 0;
  for (int num : nums) {
  int digits = 0;
  while (num > 0) {
@@ -13,6 +12,5 @@ public:
  }
  }
  return answer;
- 
-    }
-};
+ }
+}
