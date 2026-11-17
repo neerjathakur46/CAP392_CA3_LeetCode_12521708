@@ -6,8 +6,8 @@ class Solution {
  return s;
  }
  for (int i = 0; i < s.length(); i++) {
- expand(s, i, i); // Odd-length palindrome
- expand(s, i, i + 1); // Even-length palindrome
+ expand(s, i, i); 
+ expand(s, i, i + 1); 
  }
  return s.substring(left, left + bestLength);
  }
